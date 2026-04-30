@@ -65,6 +65,7 @@ img {
 .container {
   max-width: 1180px;
   margin: 0 auto;
+  padding-inline: 1rem;
 }
 
 .in-pad {
@@ -78,8 +79,7 @@ h1 {
   color: var(--c-pg-white);
   text-align: center;
   line-height: var(--lh-tight);
-  letter-spacing: 0;
-  white-space: nowrap;
+  max-inline-size: 500px;
 }
 h2 {
   font-size: var(--fs-heading-2);
@@ -191,12 +191,13 @@ a {
 }
 
 .text-block {
-  background-color: var(--grey-15);
+  background-color: #2626266f;
+  backdrop-filter: blur(20px);
   padding: 0.35em 0.8em;
   display: inline-block;
   width: fit-content;
-  backdrop-filter: blur(200px);
   border-radius: var(--radius-sm);
+  text-align: center;
 }
 
 .text-chip {
@@ -207,9 +208,10 @@ a {
   border-radius: var(--radius-sm);
 }
 
-.accent-btn {
-  background-color: var(--c-secondary-btn);
+.glow-btn {
+  background-color: #26262636;
   line-height: var(--lh-normal);
   padding: 0.35em 0.8em;
   width: fit-content;
+  backdrop-filter: blur(20px);
 }

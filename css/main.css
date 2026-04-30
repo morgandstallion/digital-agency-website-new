@@ -156,8 +156,45 @@ nav {
   display: none;
 }
 
+/* HERO SECTION */
+.hero-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* HERO SECTION */
+.hero-des-desk {
+  display: none;
+}
+
+.hero-des-mob {
+  display: flex;
+  margin-block: 1.875rem 2.5rem;
+}
+
+.hero {
+  background: url("../assets/images/Hero-Section-sm.svg");
+}
+
+.hero-box {
+  padding-block: clamp(7rem, 7.769rem + -3.077vw, 5rem);
+}
+
+.hero-btns {
+  display: flex;
+  gap: 13px;
+}
+
 /* MEDIA QUERY */
 @media (width > 1000px) {
+  /* layout */
+  .container {
+    padding-inline: unset;
+  }
+
+  /* navbar */
   .hamburger {
     display: none;
   }
@@ -187,5 +224,29 @@ nav {
 
   .contact {
     display: flex;
+  }
+
+  /* hero */
+  .hero-des-desk {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-block: 1.875rem 2.5rem;
+  }
+
+  .hero-des-mob {
+    display: none;
+  }
+
+  .text-chip-ds {
+    background-color: var(--c-text-chip);
+    padding: 0.35em 0.8em;
+    display: inline-block;
+    width: fit-content;
+    border-radius: var(--radius-sm);
+  }
+
+  .hero {
+    background: url("../assets/images/Hero-Section-lg.svg");
   }
 }
