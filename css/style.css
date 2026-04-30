@@ -1,6 +1,8 @@
 @import url(main.css);
 /* RESETS */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -198,6 +200,7 @@ a {
   width: fit-content;
   border-radius: var(--radius-sm);
   text-align: center;
+  border: 0.5px solid var(--grey-15);
 }
 
 .text-chip {
@@ -206,6 +209,7 @@ a {
   display: inline-block;
   width: fit-content;
   border-radius: var(--radius-sm);
+  border: 0.5px solid var(--grey-15);
 }
 
 .glow-btn {
@@ -214,4 +218,5 @@ a {
   padding: 0.35em 0.8em;
   width: fit-content;
   backdrop-filter: blur(20px);
+  border: 0.5px solid var(--grey-15);
 }
