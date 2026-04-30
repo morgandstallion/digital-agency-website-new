@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>SquareUp</title>
+</head>
+
+<body>
+    <header class="bb">
+        <nav class="container in-pad">
+            <div class="logo">
+                <img src="assets/icons/Logo.svg" alt="">
+            </div>
+
+            <!-- Desktop links: always visible on wide screens, hidden on mobile via CSS -->
+
+            <ul class="desktop-links">
+                <li><a class="pg-grey" href="index.html">Home</a></li>
+
+                <li><a class="pg-grey" href="services.html">Services</a></li>
+
+                <li><a class="pg-grey" href="work.html">Work</a></li>
+
+                <li><a class="pg-grey" href="process.html">Process</a></li>
+
+                <li><a class="pg-grey" href="about.html">About</a></li>
+
+                <li><a class="pg-grey" href="careers.html">Careers</a></li>
+            </ul>
+
+            <ul>
+                <li><a class="primary-btn contact" href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <!-- Hamburger: only visible on mobile -->
+            <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+                <img src="assets/icons/hamburger.svg" alt="square up logo.">
+            </button>
+        </nav>
+
+        <!-- Mobile drawer: full panel that overlays everything, including the nav bar -->
+        <div class="mobile-menu" role="dialog" aria-label="Navigation menu">
+
+            <!-- Drawer header: logo on left, close button on right -->
+            <div class="mobile-menu-header in-pad">
+                <div class="logo">
+                    <img src="assets/icons/Logo.svg" alt="">
+                </div>
+                <button class="close-btn" aria-label="Close menu">×</button>
+            </div>
+
+            <!-- Links inside the drawer -->
+            <ul class="mobile-links">
+                <li><a class="pg-grey" href="index.html">Home &RightArrowBar;</a></li>
+                <li><a class="pg-grey" href="services.html">Services &RightArrowBar;</a></li>
+                <li><a class="pg-grey" href="work.html">Work &RightArrowBar;</a></li>
+                <li><a class="pg-grey" href="process.html">Process &RightArrowBar;</a></li>
+                <li><a class="pg-grey" href="about.html">About &RightArrowBar;</a></li>
+                <li><a class="pg-grey" href="careers.html">Careers &RightArrowBar;</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero"></section>
+
+        <section class="companies-logo"></section>
+
+        <section class="our-services"></section>
+
+        <section class="why-choose-us"></section>
+
+        <section class="faq"></section>
+
+        <section class="cta"></section>
+
+        <section class="contact-form"></section>
+
+    </main>
+
+    <footer></footer>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
