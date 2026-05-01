@@ -68,6 +68,15 @@ img {
   max-width: 1180px;
   margin: 0 auto;
   padding-inline: 1rem;
+  background-color: #2424242f;
+}
+
+@media (width < 1000px) {
+  .content-border {
+    border-left: 1px solid var(--grey-15);
+    border-right: 1px solid var(--grey-15);
+    padding-inline: 0.5rem;
+  }
 }
 
 .in-pad {
@@ -155,6 +164,25 @@ a {
   border-right: 1px solid var(--grey-15);
 }
 
+@media (width > 1000px) {
+  .bt-ds {
+    border-top: 1px solid var(--grey-15);
+  }
+  .bb-ds {
+    border-bottom: 1px solid var(--grey-15);
+  }
+  .bl-ds {
+    border-left: 1px solid var(--grey-15);
+  }
+  .br-ds {
+    border-right: 1px solid var(--grey-15);
+  }
+}
+
+.icon {
+  width: 50px;
+}
+
 /* COMPONENTS */
 
 .hamburger {
@@ -188,8 +216,9 @@ a {
 .secondary-btn {
   background-color: var(--c-secondary-btn);
   line-height: var(--lh-normal);
-  padding: 0.35em 0.8em;
+  padding: 0.6em 0.8em;
   width: 100%;
+  text-align: center;
 }
 
 .text-block {
