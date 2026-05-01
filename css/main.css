@@ -217,7 +217,7 @@ nav {
   position: relative;
   border-left: 0.5px solid var(--grey-15);
   border-right: 0.5px solid var(--grey-15);
-  background-color: #2424242f;
+  /* background-color: #2424242f; */
   padding-block: 1rem;
 }
 
@@ -230,6 +230,53 @@ nav {
   width: 1px;
   background: var(--grey-15);
   transform: translateX(-50%);
+}
+
+/* SERVICES SECTION */
+.services-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
+  flex-direction: column;
+  background: url("../assets/images/services-banner-sm.png") no-repeat;
+  background-size: cover;
+  padding-block: clamp(3.125rem, 1.923rem + 4.808vw, 6.25rem);
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding-block-start: var(--space-8);
+}
+
+.service {
+  border-bottom: 1px solid var(--grey-15);
+  padding-block-end: var(--space-8);
+}
+
+.service:last-child {
+  border-bottom: none;
+}
+
+.service-heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.service p {
+  margin-block: var(--space-8);
+  line-height: var(--lh-normal);
+  letter-spacing: -0.6%;
+}
+
+.service-link {
+  margin-block-start: auto;
 }
 
 /* MEDIA QUERY */
@@ -317,5 +364,45 @@ nav {
   }
   .logos {
     display: none;
+  }
+
+  /* SERVICES SECTION */
+  .services-banner {
+    background: url("../assets/images/services-banner-lg.png") no-repeat;
+    background-size: cover;
+  }
+
+  .services {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .service {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 40px;
+  }
+
+  .service p {
+    padding-bottom: 3.75rem;
+  }
+
+  .service-heading {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .service-link {
+    margin-top: auto; /* pins button to bottom */
+  }
+
+  .service {
+    border-left: 1px solid var(--grey-15);
+  }
+
+  .service:first-child {
+    border-left: none;
   }
 }
