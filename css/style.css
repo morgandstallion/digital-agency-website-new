@@ -135,7 +135,7 @@ a {
 }
 
 .pg-grey {
-  color: var(--c-pg-grey) !important;
+  color: var(--c-pg-grey);
 }
 
 .c-tx-60 {
@@ -227,6 +227,17 @@ a {
   padding: 0.35em 0.8em;
   display: inline-block;
   width: fit-content;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  border: 0.5px solid var(--grey-15);
+}
+
+.text-block-2 {
+  background-color: #2626266f;
+  backdrop-filter: blur(20px);
+  padding: 0.35em 0.8em;
+  display: inline-block;
+  width: 100%;
   border-radius: var(--radius-sm);
   text-align: center;
   border: 0.5px solid var(--grey-15);
