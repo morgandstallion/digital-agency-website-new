@@ -356,6 +356,10 @@ nav {
   border-bottom: none;
 }
 
+.testimonial-link {
+  display: none;
+}
+
 .profile-head img {
   width: clamp(2.5rem, 2.26rem + 0.962vw, 3.125rem);
 }
@@ -390,10 +394,6 @@ nav {
   text-align: center;
   gap: var(--space-2);
   flex-direction: column;
-}
-
-.testimonial-link {
-  display: none;
 }
 
 /* MEDIA QUERY */
