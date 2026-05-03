@@ -627,4 +627,10 @@ nav {
     flex-direction: column;
     border-bottom: none;
   }
+
+  /* FAQ SECTION */
+  .faq-banner {
+    background: url("../assets/images/faq-banner-lg.png") no-repeat;
+    background-size: cover;
+  }
 }
