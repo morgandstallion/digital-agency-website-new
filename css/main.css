@@ -320,6 +320,69 @@ nav {
   font-weight: var(--fw-regular);
 }
 
+/* Testimonial section */
+.testimonial-banner {
+  background: url("../assets/images/testimonial-banner-sm.png") no-repeat;
+  background-size: cover;
+  padding-block: clamp(3.125rem, 1.923rem + 4.808vw, 6.25rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
+  flex-direction: column;
+}
+
+.testimonial-banner h2 {
+  max-inline-size: clamp(20.375rem, 9.462rem + 43.654vw, 48.75rem);
+}
+
+.testimonial-banner p {
+  max-inline-size: clamp(20.375rem, 9.462rem + 43.654vw, 48.75rem);
+  line-height: var(--lh-normal);
+  letter-spacing: 0.6%;
+}
+
+.testimonial > p:nth-of-type(2) {
+  margin-block: 1.25rem clamp(1.5rem, 1.356rem + 0.577vw, 1.875rem);
+}
+
+.testimonial {
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--grey-15);
+}
+
+.testimonial:last-child {
+  border-bottom: none;
+}
+
+.profile-head img {
+  width: clamp(2.5rem, 2.26rem + 0.962vw, 3.125rem);
+}
+
+.profile-head {
+  display: flex;
+  align-items: center;
+
+  gap: var(--space-2);
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.testimonial-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial-link {
+  display: none;
+}
+
 /* MEDIA QUERY */
 @media (width > 1000px) {
   .bod-border {
@@ -497,5 +560,58 @@ nav {
     height: 100vh;
     top: 0;
     left: calc(var(--line-offset) * -1);
+  }
+
+  /* Testimonial section */
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--border-gap);
+    overflow: hidden;
+  }
+
+  .testimonials > .testimonial::before,
+  .testimonials > .testimonial::after {
+    content: "";
+    background-color: var(--border-color);
+    position: absolute;
+  }
+
+  .testimonials > .testimonial::after {
+    width: 100vw;
+    height: var(--border-thickness);
+    top: calc(var(--line-offset) * -1);
+    left: 0;
+  }
+
+  .testimonials > .testimonial::before {
+    width: var(--border-thickness);
+    height: 100vh;
+    top: 0;
+    left: calc(var(--line-offset) * -1);
+  }
+
+  .testimonials > .testimonial {
+    position: relative;
+    padding: var(--space-8);
+  }
+
+  .testimonial-banner {
+    background: url("../assets/images/testimonial-banner-lg.png") no-repeat;
+    background-size: cover;
+  }
+
+  .testimonial-link {
+    display: flex;
+  }
+
+  .testimonial-profile {
+    margin-top: auto;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
   }
 }
