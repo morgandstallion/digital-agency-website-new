@@ -379,6 +379,19 @@ nav {
   align-items: center;
 }
 
+/* faq section */
+.faq-banner {
+  background: url("../assets/images/faq-banner-sm.png") no-repeat;
+  background-size: cover;
+  padding-block: clamp(3.125rem, 1.923rem + 4.808vw, 6.25rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
+  flex-direction: column;
+}
+
 .testimonial-link {
   display: none;
 }
