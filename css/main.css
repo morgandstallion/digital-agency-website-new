@@ -396,6 +396,86 @@ nav {
   flex-direction: column;
 }
 
+.faq-number img {
+  width: clamp(2.5rem, 2.26rem + 0.962vw, 3.125rem);
+}
+
+.faq-number {
+  position: relative;
+  width: fit-content;
+}
+
+.faq {
+  margin-block: var(--space-4);
+}
+
+.faq-number h4 {
+  position: absolute;
+  top: 19%;
+  left: 25%;
+}
+
+details > summary {
+  list-style: none; /* Removes marker for most browsers */
+}
+
+details > summary::marker, /* For modern browsers */
+details > summary::-webkit-details-marker {
+  /* For WebKit-based browsers */
+  display: none;
+}
+
+.faq-box {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.faqs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--border-gap);
+  padding-inline: var(--space-8);
+  align-items: start;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+details[open] .question {
+  color: var(--c-accordion-open);
+}
+
+details[open] .faq-number h4 {
+  color: var(--green-50);
+}
+
+details {
+  width: 100%;
+}
+
+.icon::before {
+  content: "+";
+  font-size: 2rem;
+  color: var(--white);
+  line-height: 1;
+}
+
+details[open] .icon::before {
+  content: "x";
+  font-size: 1.5rem;
+  color: var(--green-70);
+  line-height: 1;
+}
+
+.question {
+  flex: 1;
+}
+
 /* MEDIA QUERY */
 @media (width > 1000px) {
   .bod-border {
