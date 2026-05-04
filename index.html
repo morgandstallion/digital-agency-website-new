@@ -620,6 +620,7 @@
                 </div>
 
             </section>
+
             <section class="cta container">
                 <div class="cta-banner">
                     <img src="./assets/icons/Logo-box.png" alt="SquareUp logo.">
@@ -631,7 +632,69 @@
                 </div>
             </section>
 
-            <section class="contact-form"></section>
+            <section class="contact-form container">
+                <form class="content-border" action="">
+                    <div class="form-box">
+                        <div class="name-x-email">
+                            <fieldset>
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Type here">
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="Type here">
+                            </fieldset>
+                        </div>
+
+                        <fieldset class="form-check">
+                            <p class="contact-text pg-18 pg-white">Why are you contacting us?</p>
+
+                            <div class="check-boxes">
+                                <div class="check-box">
+                                    <input type="checkbox" name="web-design" id="web-design" value="web-design">
+                                    <label for="web-design">Web Design</label>
+                                </div>
+
+                                <div class="check-box">
+                                    <input type="checkbox" name="collaboration" id="collaboration"
+                                        value="collaboration">
+                                    <label for="collaboration">Collaboration</label>
+                                </div>
+
+                                <div class="check-box">
+                                    <input type="checkbox" name="mobile-app-design" id="mobile-app-design"
+                                        value="mobile-app-design">
+                                    <label for="mobile-app-design">Mobile App Design</label>
+                                </div>
+
+
+                                <div class="check-box">
+                                    <input type="checkbox" name="others" id="others" value="others">
+                                    <label for="others">Others</label>
+                                </div>
+
+                            </div>
+
+                        </fieldset>
+
+                        <fieldset>
+                            <p class="pg-18 pg-white">Your Budget</p>
+                            <p class="range-txt">Slide to indicate your budget range</p>
+
+                            <input type="range" id="budget" name="budget" min="1000" max="100000" step="1000">
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Type here"></textarea>
+                        </fieldset>
+
+                    </div>
+
+                    <button type="submit" class="primary-btn">Submit</button>
+                </form>
+            </section>
 
         </div>
     </main>
