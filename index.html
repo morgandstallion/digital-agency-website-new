@@ -406,7 +406,7 @@
                 </div>
             </section>
 
-            <section role="accordion" class="faq container">
+            <section class="faq container">
                 <div class="faq-banner">
                     <h3>Frequently Asked Questions</h3>
                     <p class="pg-16 pg-grey">Still you have any questions? Contact our Team via hello@squareup.com</p>
@@ -682,7 +682,20 @@
                             <p class="pg-18 pg-white">Your Budget</p>
                             <p class="range-txt">Slide to indicate your budget range</p>
 
-                            <input type="range" id="budget" name="budget" min="1000" max="100000" step="1000">
+                            <div class="range-slider">
+                                <span class="slider-track"></span>
+
+                                <input type="range" name="min_val" class="min-val" min="1000" max="12000" value="2000"
+                                    oninput="slideMin()">
+
+
+                                <input type="range" name="max_val" class="max-val" min="1000" max="12000" value="7000"
+                                    oninput="slideMax()">
+
+
+                                <div class="tooltip min-tooltip"></div>
+                                <div class="tooltip max-tooltip"></div>
+                            </div>
                         </fieldset>
 
                         <fieldset>
