@@ -13,6 +13,7 @@
   --grey-40: #656567;
   --grey-90: #e6e6e6;
   --grey-60: #98989a;
+  --grey-60-01: #98989a0a;
   --white: #ffffff;
   --black: #000000;
 
@@ -526,8 +527,9 @@ form {
   flex-direction: column;
   align-items: center;
   gap: var(--space-4);
-  max-width: calc(846px - 60px);
-  margin: var(--space-8) auto;
+  max-width: 600px;
+  margin: auto;
+  padding-block: var(--space-8);
 }
 
 .form-box {
@@ -535,7 +537,6 @@ form {
   flex-direction: column;
   gap: var(--space-4);
   width: 100%;
-  padding-block: var(--space-4);
 }
 
 fieldset {
@@ -543,6 +544,7 @@ fieldset {
   background-color: var(--grey-19);
   padding: var(--space-4);
   border-radius: var(--radius-sm);
+  border: 1px solid var(--grey-60-01);
 }
 
 input[type="text"],
@@ -552,9 +554,34 @@ textarea {
   border: none;
   border-bottom: 1.5px solid var(--grey-20);
   width: 100%;
-  font-size: var(--fs-text-14);
-  color: var(--grey-40);
   padding-bottom: var(--space-1);
+  resize: none;
+  overflow-y: auto;
+  max-height: 100px;
+
+  color: var(--green-80);
+  font-family: inherit;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: var(--grey-40);
+}
+
+label[for="name"],
+label[for="email"],
+label[for="message"] {
+  font-size: var(--fs-text-18);
+  color: var(--white);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1.5px solid var(--green-50);
 }
 
 .name-x-email {
@@ -573,6 +600,52 @@ textarea {
   gap: var(--space-2);
 }
 
+.check-box label {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--grey-60-01);
+  background: var(--grey-20);
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--green-50);
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--grey-19);
+  width: 20px;
+  height: 20px;
+}
+
+input[type="checkbox"]:hover {
+  border: 0.5px solid var(--green-50);
+  background-color: var(--grey-15);
+}
+
 .check-boxes {
   margin-block-start: var(--space-4);
 }
@@ -582,18 +655,12 @@ textarea {
   font-size: var(--fs-text-16);
 }
 
-label[for="name"],
-label[for="email"],
-label[for="message"] {
-  font-size: var(--fs-text-18);
-  color: var(--white);
-}
-
 .range-txt {
   font-size: var(--fs-text-16);
   color: var(--grey-90);
   line-height: var(--lh-normal);
   letter-spacing: 0.6%;
+  margin-block: var(--space-1) var(--space-12);
 }
 
 .range-slider {

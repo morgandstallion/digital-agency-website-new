@@ -61,3 +61,11 @@ function setArea() {
   minTooltip.style.left = minPercent + "%";
   maxTooltip.style.left = maxPercent + "%";
 }
+
+// TEXT AREA SCROLL
+const textarea = document.querySelector("textarea");
+
+textarea.addEventListener("input", () => {
+  textarea.style.height = "auto";
+  textarea.style.height = textarea.scrollHeight + "px";
+});
