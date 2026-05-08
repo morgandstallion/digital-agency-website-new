@@ -223,6 +223,7 @@ a {
 
 .text-block {
   background-color: #2626266f;
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   padding: 0.35em 0.8em;
   display: inline-block;
@@ -234,6 +235,7 @@ a {
 
 .text-block-2 {
   background-color: #2626266f;
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   padding: 0.35em 0.8em;
   display: inline-block;
@@ -257,6 +259,7 @@ a {
   line-height: var(--lh-normal);
   padding: 0.35em 0.8em;
   width: fit-content;
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border: 0.5px solid var(--grey-15);
 }
