@@ -646,14 +646,12 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .tooltip {
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem 0.5rem;
   border: 0;
   color: var(--white);
-  background: red;
   border-radius: var(--radius-sm);
   font-size: var(--fs-text-14);
   line-height: var(--lh-snug);
-  bottom: 120%;
   display: block;
   position: absolute;
   text-align: center;
@@ -668,7 +666,7 @@ input[type="range"]::-moz-range-thumb {
 
 .max-tooltip {
   right: 50%;
-  transform: translateX(50%) translateY(-100%);
+  transform: translateX(-50%) translateY(-100%);
 }
 
 /* MEDIA QUERY */

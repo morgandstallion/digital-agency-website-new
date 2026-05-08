@@ -36,8 +36,7 @@ function slideMin() {
   if (gap <= minGap) {
     minVal.value = parseInt(maxVal.value) - minGap;
   }
-  minTooltip.innerHTML = "$" + minVal.value;
-  priceInputMin.value = minVal.value;
+  minTooltip.innerHTML = "$" + " " + minVal.value;
   setArea();
 }
 
@@ -46,34 +45,19 @@ function slideMax() {
   if (gap <= minGap) {
     maxVal.value = parseInt(minVal.value) + minGap;
   }
-  maxTooltip.innerHTML = "$" + maxVal.value;
-  priceInputMax.value = maxVal.value;
+  maxTooltip.innerHTML = "$" + " " + maxVal.value;
   setArea();
 }
 
 function setArea() {
-  range.style.left = (minVal.value / sliderMaxValue) * 100 + "%";
-  minTooltip.style.left = (minVal.value / sliderMaxValue) * 100 + "%";
-  range.style.right = 100 - (maxVal.value / sliderMaxValue) * 100 + "%";
-  maxTooltip.style.right = 100 - (maxVal.value / sliderMaxValue) * 100 + "%";
+  const min = parseInt(minVal.min);
+  const max = parseInt(maxVal.max);
+  const minPercent = ((minVal.value - min) / (max - min)) * 100;
+  const maxPercent = ((maxVal.value - min) / (max - min)) * 100;
+
+  range.style.left = minPercent + "%";
+  range.style.right = 100 - maxPercent + "%";
+
+  minTooltip.style.left = minPercent + "%";
+  maxTooltip.style.left = maxPercent + "%";
 }
-
-/*function setMinInput() {
-  let minPrice = parseInt(priceInputMin.value);
-}
-
-function setMaxInput() {
-  let maxPrice = parseInt(priceInputMax.value);
-}*/
-
-/*  range.style.left = `${
-    ((minVal.value - sliderMinValue) / (sliderMaxValue - sliderMinValue)) * 100
-  }%`;
-
-  range.style.left = (minVal.value / sliderMaxValue) * 100 + "%";
-  minTooltip.style.left = (minVal.value / sliderMaxValue) * 100 + "%";
-  range.style.right = `${
-    100 -
-    ((maxVal.value - sliderMinValue) / (sliderMaxValue - sliderMinValue)) * 100
-  }%`;
-  maxTooltip.style.right = 100 - (maxVal.value / sliderMaxValue) * 100 + "%"; */
