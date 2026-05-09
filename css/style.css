@@ -68,7 +68,6 @@ img {
   max-width: 1180px;
   margin: 0 auto;
   padding-inline: 1rem;
-  background-color: #2424242f;
 }
 
 @media (width < 1000px) {
