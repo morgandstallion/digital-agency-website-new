@@ -1,0 +1,132 @@
+@import url("./main.css");
+@import url("./style.css");
+
+footer {
+  padding-block: var(--space-4);
+}
+.footer-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--grey-15);
+  padding-block: var(--space-4);
+}
+
+.footer-nav-links li a {
+  font-size: 1rem;
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-normal);
+  white-space: nowrap;
+}
+
+.footer-nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-block: var(--space-4);
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-4);
+  border: 1px solid var(--grey-15);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.footer-social p {
+  font-weight: var(--fw-medium);
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.socials img {
+  width: 52px;
+}
+
+.links ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  width: 320px;
+  font-size: var(--fs-text-18);
+  color: var(--c-pg-white);
+  border-bottom: 1px solid var(--grey-15);
+  padding-bottom: var(--space-2);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-block-start: var(--space-4);
+}
+
+.links ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.links ul li img {
+  width: 15px;
+}
+
+.attribution {
+  padding-block: var(--space-4);
+}
+
+/* media query */
+@media (width > 1000px) {
+  .footer-logo {
+    margin-inline-end: 10rem;
+  }
+
+  .footer-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--grey-15);
+    padding-bottom: var(--space-4);
+  }
+
+  .footer-nav-links {
+    flex-wrap: nowrap;
+  }
+
+  .footer-logo {
+    width: unset;
+    display: unset;
+    border-bottom: none;
+  }
+
+  .footer-social {
+    flex-direction: row;
+    padding: var(--space-2);
+  }
+
+  .footer-links {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .links ul {
+    flex-direction: row;
+  }
+
+  .links ul li {
+    width: unset;
+  }
+}
