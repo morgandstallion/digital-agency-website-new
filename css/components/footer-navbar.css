@@ -1,5 +1,83 @@
-@import url("./main.css");
-@import url("./style.css");
+@import url("./global.css");
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+  top: 0;
+  background-color: var(--c-bg-primary);
+  padding-block: var(--space-4);
+}
+
+.desktop-links {
+  display: none;
+}
+
+.hamburger {
+  background-color: var(--c-text-chip);
+  border-radius: var(--radius-md);
+  width: 46px;
+  height: 46px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-menu {
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+  display: flex !important;
+  flex-direction: column;
+  visibility: hidden;
+  background: var(--c-bg-primary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+}
+
+.mobile-menu.open {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.mobile-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block-start: var(--space-4);
+  padding-inline: 1rem;
+}
+
+.close-btn {
+  font-size: 2.5rem;
+  color: var(--green-70);
+}
+
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu ul li {
+  border-bottom: 1px dashed var(--green-70);
+}
+
+.mobile-menu ul li a {
+  display: block;
+  padding: 18px 24px;
+}
+
+.contact {
+  display: none;
+}
+
+/* FOOTER */
 
 footer {
   padding-block: var(--space-4);
@@ -90,6 +168,38 @@ footer {
 
 /* media query */
 @media (width > 1000px) {
+  /* navbar */
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none !important;
+  }
+
+  .desktop-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+  }
+
+  .desktop-links li a {
+    text-decoration: none;
+  }
+
+  .desktop-links li a:hover {
+    background-color: var(--c-text-chip);
+    padding: 0.35em 0.8em;
+    display: inline-block;
+    width: fit-content;
+    border-radius: var(--radius-sm);
+  }
+
+  .contact {
+    display: flex;
+  }
+
   .footer-logo {
     margin-inline-end: 10rem;
   }
