@@ -327,6 +327,7 @@ a {
   .content-border {
     border-left: 1px solid var(--grey-15);
     border-right: 1px solid var(--grey-15);
+    border-bottom: 1px solid var(--grey-15);
     padding-inline: 0.5rem;
   }
 }

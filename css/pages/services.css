@@ -1,13 +1,32 @@
 @import url("../components/global.css");
 @import url("../components/footer-navbar.css");
 
-.services-hero {
+.hero-banner {
   background: url("../../assets/images/services-banner-sm.png") no-repeat;
   background-size: cover;
 }
 
+.header-box {
+  padding-block: clamp(2.5rem, 1.538rem + 3.846vw, 5rem) 2.5rem;
+}
+
+.header-box p:first-of-type {
+  letter-spacing: 0.6%;
+  line-height: var(--lh-normal);
+  max-inline-size: 950px;
+  margin-block-start: clamp(0.375rem, 0.279rem + 0.385vw, 0.625rem);
+}
+
+.header-box p:nth-of-type(2) {
+  margin-block-start: clamp(1.313rem, 1.096rem + 0.865vw, 1.875rem);
+}
+
 @media (width > 1000px) {
-  .services-hero {
+  .in-pad {
+    padding-inline: 2.5rem;
+  }
+
+  .hero-banner {
     background: url("../../assets/images/services-banner-lg.png") no-repeat;
     background-size: cover;
   }
