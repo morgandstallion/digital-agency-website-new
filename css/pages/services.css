@@ -1,2 +1,14 @@
 @import url("../components/global.css");
 @import url("../components/footer-navbar.css");
+
+.services-hero {
+  background: url("../../assets/images/services-banner-sm.png") no-repeat;
+  background-size: cover;
+}
+
+@media (width > 1000px) {
+  .services-hero {
+    background: url("../../assets/images/services-banner-lg.png") no-repeat;
+    background-size: cover;
+  }
+}

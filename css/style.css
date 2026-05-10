@@ -82,15 +82,7 @@
 
 /* SERVICES SECTION */
 .services-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: var(--space-2);
-  flex-direction: column;
   background: url("../assets/images/services-banner-sm.png") no-repeat;
-  background-size: cover;
-  padding-block: clamp(3.125rem, 1.923rem + 4.808vw, 6.25rem);
 }
 
 .services {
@@ -127,13 +119,6 @@
 /* WHY US SECTION */
 .why-us-banner {
   background: url("../assets/images/why-us-banner-sm.png") no-repeat;
-  padding-block: clamp(3.125rem, 1.923rem + 4.808vw, 6.25rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: var(--space-2);
-  flex-direction: column;
 }
 
 .why-us-banner p {
@@ -165,14 +150,6 @@
 /* Testimonial section */
 .testimonial-banner {
   background: url("../assets/images/testimonial-banner-sm.png") no-repeat;
-  background-size: cover;
-  padding-block: clamp(3.125rem, 1.923rem + 4.808vw, 6.25rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: var(--space-2);
-  flex-direction: column;
 }
 
 .testimonial-banner h2 {
@@ -227,13 +204,7 @@
 
 /* cta section */
 .cta-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
   background: url("../assets/images/cta-banner-sm.png") no-repeat;
-  background-size: cover;
 }
 
 .cta-banner img {
@@ -427,7 +398,6 @@
 
   .testimonial-banner {
     background: url("../assets/images/testimonial-banner-lg.png") no-repeat;
-    background-size: cover;
   }
 
   .testimonial-link {
@@ -447,6 +417,5 @@
   /* cta section */
   .cta-banner {
     background: url("../assets/images/cta-banner-lg.png") no-repeat;
-    background-size: cover;
   }
 }
