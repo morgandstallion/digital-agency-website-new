@@ -311,6 +311,17 @@ a {
   border: 0.5px solid var(--grey-15);
 }
 
+.banner {
+  padding-block: clamp(3.125rem, 1.923rem + 4.808vw, 6.25rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--space-4);
+  text-align: center;
+  background-size: cover;
+}
+
 /* media query */
 @media (width < 1000px) {
   .content-border {
@@ -325,6 +336,7 @@ a {
     border-left: 1px solid var(--grey-15);
     border-right: 1px solid var(--grey-15);
     border-bottom: 1px solid var(--grey-15);
+    border-top: 1px solid var(--grey-15);
   }
 
   .container {
