@@ -206,9 +206,6 @@
 }
 
 /* cta section */
-.cta-banner {
-  background: url("../assets/images/cta-banner-sm.png") no-repeat;
-}
 
 /* MEDIA QUERY */
 @media (width > 1000px) {
@@ -393,10 +390,5 @@
     display: flex;
     flex-direction: column;
     border-bottom: none;
-  }
-
-  /* cta section */
-  .cta-banner {
-    background: url("../assets/images/cta-banner-lg.png") no-repeat;
   }
 }

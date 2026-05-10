@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+  background: url("../../assets/images/cta-banner-sm.png") no-repeat;
   background-size: cover;
 }
 
@@ -16,10 +17,11 @@
 }
 
 .cta-banner p {
-  max-inline-size: clamp(20.375rem, 9.462rem + 43.654vw, 48.75rem);
+  max-inline-size: clamp(22rem, 9.462rem + 43.654vw, 48.75rem);
   margin-block-start: clamp(0.375rem, 0.279rem + 0.385vw, 0.625rem);
   letter-spacing: 0.6%;
   font-weight: var(--fw-regular);
+  text-wrap: balance;
 }
 
 .cta-banner a {
@@ -29,4 +31,10 @@
   font-weight: var(--fw-medium);
   color: var(--grey-10);
   line-height: var(--lh-normal);
+}
+
+@media (width > 1000px) {
+  .cta-banner {
+    background: url("../../assets/images/cta-banner-lg.png") no-repeat;
+  }
 }
