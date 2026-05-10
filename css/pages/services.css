@@ -1,5 +1,6 @@
 @import url("../components/global.css");
 @import url("../components/footer-navbar.css");
+@import url("../components/cta.css");
 
 .hero-banner {
   background: url("../../assets/images/services-banner-sm.png") no-repeat;
