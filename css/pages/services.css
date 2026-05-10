@@ -67,7 +67,11 @@
 
   .boxes {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .box {
+    flex: 1;
   }
 }
