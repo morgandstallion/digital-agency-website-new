@@ -137,7 +137,7 @@ footer {
   justify-content: center;
   gap: var(--space-2);
   width: 320px;
-  font-size: var(--fs-text-18);
+  font-size: var(--fs-text-16);
   color: var(--c-pg-white);
   border-bottom: 1px solid var(--grey-15);
   padding-bottom: var(--space-2);
