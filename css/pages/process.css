@@ -2,3 +2,13 @@
 @import url("../components/footer-navbar.css");
 @import url("../components/contact-form.css");
 @import url("../components/cta.css");
+
+.process-hero {
+  background: url("../../assets/images/why-us-banner-sm.png") no-repeat;
+}
+
+@media (width > 1000px) {
+  .process-hero {
+    background: url("../../assets/images/why-us-banner-lg.png") no-repeat;
+  }
+}
