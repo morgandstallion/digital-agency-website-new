@@ -7,9 +7,35 @@
   background-size: cover;
 }
 
+.about-header-box img {
+  width: clamp(24.063rem, 19.375rem + 12.5vw, 30.625rem);
+}
+
+.about-header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: min(var(--space-6), 1rem);
+  padding-block: clamp(2.5rem, 0.714rem + 4.762vw, 5rem);
+}
+
+.about-header-box p {
+  max-inline-size: clamp(24.063rem, 19.375rem + 12.5vw, 30.625rem);
+  line-height: var(--lh-normal);
+  letter-spacing: 0.6%;
+}
+
+.about-header {
+  border-block-end: 1px solid var(--grey-15);
+}
+
 @media (width > 1000px) {
   .about-banner {
     background: url("../../assets/images/services-banner-lg.png") no-repeat;
     background-size: cover;
+  }
+  .about-header-box {
+    flex-direction: row;
   }
 }
