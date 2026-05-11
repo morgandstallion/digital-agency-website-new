@@ -1,0 +1,91 @@
+* [33m604a164[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mworks-page[m[33m)[m complete works section
+* [33m08f09f2[m[33m ([m[1;31morigin/works-page[m[33m)[m works header
+* [33m9a0cc26[m works-page hero
+* [33m875b855[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m refactored JS architecture
+*   [33mda7f3f0[m Merge pull request #20 from morgandstallion/services-footer
+[32m|[m[33m\[m  
+[32m|[m * [33m4aa0354[m complete services page
+[32m|[m[32m/[m  
+*   [33m2b08132[m Merge pull request #19 from morgandstallion/services-cta
+[34m|[m[35m\[m  
+[34m|[m * [33m1c0f976[m complete services-cta
+[34m|[m[34m/[m  
+*   [33mfbb53a3[m Merge pull request #18 from morgandstallion/services-project
+[36m|[m[1;31m\[m  
+[36m|[m * [33mab38558[m complete services-project-management
+[36m|[m * [33m19e8b23[m project management header
+[36m|[m[36m/[m  
+*   [33m00f557d[m Merge pull request #17 from morgandstallion/sevices-engineering
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33m4e70436[m complete services-engineering
+[1;32m|[m * [33m8d80579[m engineering-header
+[1;32m|[m[1;32m/[m  
+*   [33m1418885[m Merge pull request #16 from morgandstallion/services-design
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [33m94b6742[m third design block
+[1;34m|[m * [33ma812e64[m second-design-block
+[1;34m|[m * [33me7c51e6[m section card structure
+[1;34m|[m[1;34m/[m  
+*   [33m213e7b2[m Merge pull request #15 from morgandstallion/general-header
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33m062c923[m general header
+[1;36m|[m[1;36m/[m  
+*   [33m055f6a3[m Merge pull request #14 from morgandstallion/services-page-hero
+[32m|[m[33m\[m  
+[32m|[m * [33mec0e044[m fixed banner styles
+[32m|[m[32m/[m  
+* [33mc2ea256[m services page configuring
+*   [33m7bcd9fb[m Merge pull request #13 from morgandstallion/refactor-css-architechture
+[34m|[m[35m\[m  
+[34m|[m * [33m9deee74[m refactored design system
+[34m|[m[34m/[m  
+*   [33m6ef845d[m Merge pull request #12 from morgandstallion/footer-section
+[36m|[m[1;31m\[m  
+[36m|[m * [33mdfcf433[m complete footer section
+[36m|[m[36m/[m  
+*   [33m81a9521[m Merge pull request #11 from morgandstallion/contact-form
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33m0ad319f[m complete form section
+[1;32m|[m * [33ma72755b[m form range input complete
+[1;32m|[m * [33m2f6fabd[m range breakpoint
+[1;32m|[m * [33m1774ad5[m stable form state
+[1;32m|[m[1;32m/[m  
+*   [33m5db038c[m Merge pull request #10 from morgandstallion/CTA-section
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [33m99ed3dd[m complete CTA section
+[1;34m|[m[1;34m/[m  
+*   [33m087c8bf[m Merge pull request #9 from morgandstallion/homepage/FAQ
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33m2c4124e[m complete FAQ section
+[1;36m|[m * [33ma34eee4[m fixed accordion | working state
+[1;36m|[m * [33m2c12ad5[m changed accordion structure to HTML details element
+[1;36m|[m * [33m9d3aedb[m accordion accessibility
+[1;36m|[m * [33m32b4efd[m faq banner
+[1;36m|[m[1;36m/[m  
+*   [33m8b80395[m Merge pull request #8 from morgandstallion/homepage/testimonial
+[32m|[m[33m\[m  
+[32m|[m * [33m86292af[m complete testimonial section
+[32m|[m[32m/[m  
+*   [33m1c98c5b[m Merge pull request #7 from morgandstallion/homepage/why-choose-us
+[34m|[m[35m\[m  
+[34m|[m * [33m1126d9e[m[33m ([m[1;31morigin/homepage/why-choose-us[m[33m)[m complete why us section
+[34m|[m[34m/[m  
+*   [33m5b2ce88[m Merge pull request #6 from morgandstallion/homepage/services
+[36m|[m[1;31m\[m  
+[36m|[m * [33m092458a[m complete services section
+[36m|[m * [33m54ac6b6[m services layout and imports
+[36m|[m[36m/[m  
+*   [33mc5496b8[m Merge pull request #3 from morgandstallion/company-logos
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33m8952207[m[33m ([m[1;31morigin/company-logos[m[33m, [m[1;32mcompany-logos[m[33m)[m company logo section
+* [1;33m|[m [33m8ee2aed[m Merge pull request #2 from morgandstallion/company-logos
+[1;34m|[m[1;33m\[m[1;33m|[m 
+[1;34m|[m * [33m21c7636[m add company logo HTML
+[1;34m|[m[1;34m/[m  
+*   [33mf62c051[m Merge pull request #1 from morgandstallion/hero-section
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33me411aa7[m complete hero section
+[1;36m|[m[1;36m/[m  
+* [33maf09d85[m refactored code - working layout
+* [33mccbabfc[m CSS variables and utilities
+* [33m5985ce8[m first commit
