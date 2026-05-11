@@ -3,8 +3,9 @@
 @import url("../components/contact-form.css");
 @import url("../components/cta.css");
 
-.process-hero {
+.hero-banner {
   background: url("../../assets/images/why-us-banner-sm.png") no-repeat;
+  background-size: cover;
 }
 
 .box-header {
@@ -22,6 +23,15 @@
   border-block-end: 1px solid var(--grey-15);
   width: 100%;
   padding-block-end: var(--space-3);
+}
+
+.box {
+  border-block-end: 1px solid var(--grey-15);
+  padding-block-end: var(--space-8);
+}
+
+.box:last-child {
+  border-block-end: none;
 }
 
 @media (width > 1000px) {
@@ -61,5 +71,9 @@
     height: 100vh;
     top: 0;
     left: calc(var(--line-offset) * -1);
+  }
+
+  .box {
+    border: none;
   }
 }
