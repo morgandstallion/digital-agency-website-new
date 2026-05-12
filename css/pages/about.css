@@ -1,6 +1,6 @@
 @import url("../components/global.css");
 @import url("../components/footer-navbar.css");
-/* @import url("../components/secondary-cta.css"); */
+@import url("../components/secondary-cta.css");
 
 .about-banner {
   background: url("../../assets/images/services-banner-sm.png") no-repeat;
@@ -87,6 +87,7 @@
     gap: var(--border-gap);
     align-items: stretch;
     overflow: hidden;
+    border-bottom: 1px solid var(--grey-15);
   }
 
   .boxes > .box {
