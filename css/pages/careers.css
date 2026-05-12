@@ -1,3 +1,13 @@
 @import url("../components/global.css");
 @import url("../components/footer-navbar.css");
 @import url("../components/secondary-cta.css");
+
+.careers-banner {
+  background: url("../../assets/images/faq-banner-sm.png") no-repeat;
+}
+
+@media (width > 1000px) {
+  .careers-banner {
+    background: url("../../assets/images/faq-banner-lg.png") no-repeat;
+  }
+}
