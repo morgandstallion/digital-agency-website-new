@@ -1,0 +1,113 @@
+@import url("../components/global.css");
+@import url("../components/footer-navbar.css");
+@import url("../components/secondary-cta.css");
+
+.careers-banner {
+  background: url("../../assets/images/faq-banner-sm.png") no-repeat;
+}
+
+.careers-box h3 {
+  color: var(--green-80);
+  border-block-end: 1px solid var(--grey-15);
+  padding-block: var(--space-4);
+}
+
+.careers-box p {
+  padding-block: clamp(1.25rem, 0.804rem + 1.19vw, 1.875rem)
+    clamp(2.5rem, 0.714rem + 4.762vw, 2.51rem);
+}
+
+.current-opening-header {
+  padding-block: 2.5rem;
+}
+
+.current-opening-box p:nth-of-type(2) {
+  padding-block: clamp(0.875rem, 0.161rem + 1.905vw, 1.875rem);
+}
+
+.current-opening-header p {
+  text-align: center;
+}
+
+.current-opening-box p:nth-of-type(1) {
+  padding-block-start: 1.5rem;
+}
+
+.current-opening-box {
+  padding-block: clamp(1.563rem, 0.893rem + 1.786vw, 2.5rem);
+  border-block-end: 1px solid var(--grey-15);
+}
+
+.current-opening-box:last-child {
+  border-block-end: none;
+}
+
+@media (width > 1000px) {
+  .careers-banner {
+    background: url("../../assets/images/faq-banner-lg.png") no-repeat;
+  }
+
+  .careers-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    overflow: hidden;
+  }
+
+  .careers-boxes > .careers-box {
+    position: relative;
+    padding: var(--space-8);
+  }
+
+  .careers-boxes > .careers-box::before,
+  .careers-boxes > .careers-box::after {
+    content: "";
+    background-color: var(--border-color);
+    position: absolute;
+  }
+
+  .careers-boxes > .careers-box::after {
+    width: 100vw;
+    height: var(--border-thickness);
+    top: calc(var(--line-offset) * -1);
+    left: 0;
+  }
+
+  .careers-boxes > .careers-box::before {
+    width: var(--border-thickness);
+    height: 100vh;
+    top: 0;
+    left: calc(var(--line-offset) * -1);
+  }
+
+  .current-opening-box {
+    border-block-end: none;
+  }
+
+  .current-opening-boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow: hidden;
+  }
+
+  .current-opening-header p {
+    text-align: unset;
+  }
+
+  .current-opening-box {
+    border-inline-end: 1px solid var(--grey-15);
+    padding: var(--space-8);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+  }
+
+  .current-opening-box a {
+    margin-top: auto;
+  }
+
+  .current-opening-box:last-child {
+    border-inline-end: none;
+  }
+}

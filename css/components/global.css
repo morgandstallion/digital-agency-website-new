@@ -250,7 +250,7 @@ a {
 }
 
 .icon {
-  width: 50px;
+  width: clamp(3.125rem, 2.679rem + 1.19vw, 3.75rem);
 }
 
 button,
@@ -364,7 +364,7 @@ a {
     border-left: 1px solid var(--grey-15);
     border-right: 1px solid var(--grey-15);
     border-bottom: 1px solid var(--grey-15);
-    border-top: 1px solid var(--grey-15);
+    /* border-top: 1px solid var(--grey-15); */
   }
 
   .in-pad {

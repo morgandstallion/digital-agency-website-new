@@ -200,6 +200,10 @@ footer {
     display: flex;
   }
 
+  nav {
+    border: none;
+  }
+
   .footer-logo {
     margin-inline-end: 10rem;
   }
