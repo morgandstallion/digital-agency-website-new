@@ -8,8 +8,93 @@
   background: url("../../assets/images/faq-banner-sm.png") no-repeat;
 }
 
+.form-social-links ul li,
+.form-bottom-txt {
+  color: var(--grey-90);
+  font-size: var(--fs-text-16);
+  line-height: var(--lh-normal);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background-color: var(--grey-15);
+  padding: 0.5em 0.8em;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.form-social-links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.form-social-links {
+  width: 90%;
+  margin-inline: auto;
+  padding-block: clamp(1.875rem, 1.429rem + 1.19vw, 2.5rem);
+}
+
+.form-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding-block: var(--space-8);
+  p {
+    white-space: nowrap;
+  }
+}
+
+.form-bottom-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-2);
+  padding-block-end: var(--space-4);
+}
+
+.bottom-box {
+  border-bottom: 1px solid var(--grey-15);
+  width: 100%;
+}
+
+.form-bottom-txt {
+  width: unset;
+}
+
 @media (width > 1000px) {
   .contact-banner {
     background: url("../../assets/images/faq-banner-lg.png") no-repeat;
+  }
+
+  .form-social-links ul {
+    flex-direction: row;
+  }
+
+  .form-social-links ul li {
+    width: unset;
+  }
+
+  .contact-form {
+    border-block-end: 1px solid var(--grey-15);
+  }
+
+  .bottom-box {
+    border-bottom: none;
+    width: unset;
+    border-inline-end: 1px solid var(--grey-15);
+    padding-inline-end: var(--space-4);
+    padding-block: 1rem;
+  }
+
+  .form-bottom {
+    flex-direction: row;
+  }
+
+  .form-bottom-1 {
+    padding-block-end: unset;
   }
 }
