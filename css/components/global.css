@@ -250,7 +250,7 @@ a {
 }
 
 .icon {
-  width: 50px;
+  width: clamp(3.125rem, 2.679rem + 1.19vw, 3.75rem);
 }
 
 button,
