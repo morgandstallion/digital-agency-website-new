@@ -60,6 +60,7 @@
   --fs-heading-4: clamp(1.25rem, 1.157rem + 0.381vw, 1.5rem);
   --fs-text-20: clamp(1.125rem, 1.079rem + 0.19vw, 1.25rem);
   --fs-text-22: clamp(1.25rem, 1.202rem + 0.192vw, 1.375rem);
+  --fs-text-24: clamp(1.25rem, 1.071rem + 0.476vw, 1.5rem);
   --fs-text-18: clamp(1rem, 0.954rem + 0.19vw, 1.125rem);
   --fs-text-16: clamp(0.875rem, 0.829rem + 0.19vw, 1rem);
   --fs-text-14: 0.875rem;
@@ -191,6 +192,10 @@ a {
   font-size: var(--fs-text-14);
 }
 
+.pg-24 {
+  font-size: var(--fs-text-24);
+}
+
 .pg-22 {
   font-size: var(--fs-text-22);
 }
@@ -286,10 +291,10 @@ a {
 }
 
 .text-block-2 {
-  background-color: #2626266f;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  padding: 0.35em 0.8em;
+  background-color: #26262646;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  padding: 1em 0.8em;
   display: inline-block;
   width: 100%;
   border-radius: var(--radius-sm);
@@ -304,6 +309,8 @@ a {
   width: fit-content;
   border-radius: var(--radius-sm);
   border: 0.5px solid var(--grey-15);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
 }
 
 .glow-btn {

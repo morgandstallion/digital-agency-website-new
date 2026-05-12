@@ -1,0 +1,55 @@
+@import url("../components/global.css");
+
+.secondary-cta-info img {
+  width: clamp(5rem, 4.107rem + 2.381vw, 6.25rem);
+}
+
+.secondary-cta-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: clamp(1.5rem, 2.371rem + -2.321vw, 0.281rem);
+  padding-block: clamp(2.563rem, 1.714rem + 2.262vw, 3.75rem)
+    clamp(1.875rem, 1.429rem + 1.19vw, 2.5rem);
+}
+
+.secondary-cta-info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(0.625rem, 0.446rem + 0.476vw, 0.875rem);
+}
+
+.secondary-cta-link .link-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-block-end: var(--space-4);
+}
+
+.sec-link {
+  width: 100%;
+}
+
+@media (width > 1000px) {
+  .secondary-cta-info {
+    flex-direction: row;
+    text-align: unset;
+  }
+
+  .secondary-cta-info-content {
+    align-items: flex-start;
+  }
+
+  .secondary-cta-link .link-block {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .sec-link {
+    width: unset;
+  }
+}
